@@ -1,0 +1,375 @@
+
+:root {
+  --main-text-color: #555;
+  --main-bg-color: #fff;
+  --accent-color: #ff523b;
+  --hover-color: #563434;
+  --slate-gray: #8a8a8a;
+  --smoth-pink: #ffd6d6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  margin: 0;
+}
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}   
+
+/* Barre de navigation  */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+a {
+  text-decoration: none;
+  color: #555;
+}
+.navbar a {
+  text-decoration: none;
+  font-weight: 600;
+
+}
+
+/* section hero */
+.header {
+  background: radial-gradient(#fff, #ffd6d6);
+}
+.header .row {
+  margin-top: 20px;
+}
+.row {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.col-2 {
+  flex-basis: 50%;
+  min-width: 300px;
+
+}
+
+.col-2 img {
+  width: 100%;
+  padding:50px 0;
+}
+.col-2 h1 {
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0;
+
+}  
+
+/* Bouton  */
+.btn {
+  display: inline-block;
+  background: #ff523b;
+  color: #fff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 5px;
+  transition: background 0.5s;
+}
+.btn:hover {
+  background: #563434;
+}
+
+/* Mise en page des images  */
+.col-3 {
+  flex-basis: 30%;
+  min-width: 250px;
+  margin-bottom: 30px;
+}
+.col-3 img {
+  width: 100%;
+  transition: transform 0.5s;
+  border-radius: 10px;
+}
+
+.col-3:hover img {
+  scale: 1.1;
+}
+
+/* style des titres de section  */
+.title {
+  text-align: center;
+  margin: 0 auto 70px;
+  position: relative;
+  color: #555;
+  line-height: 60px;
+}
+.title::after {
+  content: '';
+  position: absolute;
+  border-radius: 5px;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 5px;
+  background: #ff523b;
+}
+.small-container {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+/* Grille de produits */
+
+h4 {
+  font-weight: normal;
+}
+.col-4 {
+  flex-basis: 25%;
+  min-width: 180px;
+  margin-bottom: 50px;
+  transition: transform 0.5s;
+}
+.col-4 img {
+  width: 95%;
+  border-radius: 10px;
+}
+.col-4:hover {
+  transform: translateY(-5px);
+}
+.col-4 h4 {
+  color: #555;
+  font-weight: normal;
+
+}
+.col-4 p {
+  font-size: 14px;
+}
+
+/* style des etoiles de notation */
+.rating {
+  color: #ff523b;
+}
+
+/* footer */
+/* --- FOOTER SECTION --- */
+.footer {
+    background: #000; /* Fond noir pour faire ressortir le logo blanc */
+    color: #8a8a8a;    /* Texte gris pour un look premium */
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    padding: 60px 0 20px;
+}
+.footer p {
+    color: #8a8a8a;
+}
+
+.footer h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Organisation en colonnes */
+.footer-col-1, 
+.footer-col-2, 
+.footer-col-3, 
+.footer-col-4 {
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-col-1 {
+    flex-basis: 30%;
+}
+
+.footer-col-2 {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-2 img {
+    width: 180px; /* Taille du logo Dakar Style Elite */
+    margin-bottom: 20px;
+}
+
+.footer-col-3,
+.footer-col-4 {
+    flex-basis: 12%;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+.app-logo {
+    margin-top: 20px;
+}
+
+.app-logo img {
+    width: 140px;
+}
+
+/* Ligne de séparation */
+.footer hr {
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+/* Copyright */
+.copyright {
+    text-align: center;
+}
+
+/* Icônes de téléchargement App (si utilisées) */
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+    .col-2, .col-3, .col-4 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* tout nos produits */
+.row-2 {
+  justify-content: space-between;
+  margin: 100px auto 50px;
+}
+
+select {
+  border: 1px solid var(#b5b5b5);
+  padding: 5px;
+}
+
+select:focus {
+  outline: none;
+}
+
+.page-btn {
+  margin: 0 auto 80px;
+}
+
+.page-btn span {
+  display: inline-block;
+  border: 1px solid var(--accent-color);
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.page-btn span:hover {
+  background: var(--accent-color);
+  color: var(--main-bg-color);
+}
+
+/* Media Quer for less than 600 screen size */
+@media only screen and (max-width: 600px) {
+  .row {
+    text-align: center;
+  }
+
+  .col-2,
+  .col-3,
+  .col-4 {
+    flex-basis: 100%;
+  }
+
+  .single-product .row {
+    text-align: left;
+  }
+
+  .single-product .col-2 {
+    padding: 20px 0;
+  }
+
+  .single-product h2 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .cart-info p {
+    display: none;
+  }
+}
+
+/*  Details de nos produits */
+.single-product {
+  margin-top: 80px;
+}
+
+.single-product .col-2 img {
+  padding: 0;
+}
+
+.single-product .col-2 {
+  padding: 20px;
+}
+
+.single-product h4 {
+  margin: 20px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.single-product select {
+  display: block;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.single-product input {
+  width: 50px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 20px;
+  margin-right: 10px;
+  border: 1px solid var(#b5b5b5;);
+}
+
+input:focus {
+  outline: none;
+}
+
+.single-product .fa {
+  margin-left: 10px;
+}
+
+.small-img-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
