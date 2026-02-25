@@ -60,7 +60,6 @@ DakarStyleElite/
 ├── feature.html
 ├── landing.html
 ├── account.html
-├── contact.html
 │
 ├── css/
 │   └── style.css
